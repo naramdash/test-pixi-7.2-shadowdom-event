@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS + Pixi</title>
+    <script type="module" src="/src/buttons.ts"></script>
+    <script type="module" src="/src/test-element.ts"></script>
+  </head>
+  <body>
+    <test-element></test-element>
+
+    <div>
+      <label style="display: block">
+        marginLeft
+        <input type="number" name="marginLeft" value="100" />
+      </label>
+      <label style="display: block">
+        marginTop
+        <input type="number" name="marginTop" value="50" />
+      </label>
+
+      <button type="button" id="set-button">set margin in body</button>
+      <button type="button" id="remove-button">remove margin in body</button>
+    </div>
+
+    <div>Red Circle: drawCircle(100,100,50)</div>
+  </body>
+</html>
